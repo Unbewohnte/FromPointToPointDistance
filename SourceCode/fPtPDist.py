@@ -80,3 +80,6 @@ calc.config(command = calculate)
 calc.place(x = 50, y = 250, width = 100)
 
 root.mainloop()
+
+
+@Unbewohnte
