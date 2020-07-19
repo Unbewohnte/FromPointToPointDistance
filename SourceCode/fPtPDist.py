@@ -35,6 +35,9 @@ def calculate():
     graph(x1,x2,y1,y2)
 
     pass
+def close_app():
+    root.quit()
+    root.destroy()
 
 root = Tk()
 root.title('From Point to Point Distance')
@@ -79,7 +82,7 @@ calc = Button(root,text = 'Calculate')
 calc.config(command = calculate)
 calc.place(x = 50, y = 250, width = 100)
 
+
+root.protocol('WM_DELETE_WINDOW',close_app)
+
 root.mainloop()
-
-
-@Unbewohnte
